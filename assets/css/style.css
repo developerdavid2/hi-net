@@ -11731,7 +11731,8 @@ textarea.form-control-lg {
   .display-2--intro {
     height: 120px;
     display: block;
-    margin-bottom: 3rem;
+    margin-bottom: 10rem;
+    padding-top: 3rem;
   }
 }
 .display-2--description {
@@ -11818,7 +11819,7 @@ nav li a {
   width: 30px;
   height: 20px;
   position: relative;
-  transition: 0.9s ease-in-out;
+  transition: 0.6s ease-in-out;
 }
 
 .navbar-toggler,
@@ -11845,7 +11846,7 @@ nav li a {
   opacity: 1;
   left: 0;
   transform: rotate(0deg);
-  transition: 0.5s ease-in-out;
+  transition: 0.3s ease-in-out;
 }
 
 .middle-bar {
@@ -11892,15 +11893,26 @@ nav li a {
 .intros .video-box {
   position: relative;
 }
+@media (min-width: 992px) {
+  .intros .video-box {
+    padding-left: 3rem;
+  }
+}
 @media (max-width: 575.98px) {
   .intros .video-box .img-fluid {
     scale: 1.8;
     margin: 3rem 0;
   }
 }
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .intros .video-box .img-fluid {
+    padding-left: 1rem;
+  }
+}
 @media (min-width: 992px) {
   .intros .video-box .img-fluid {
     scale: 1.2;
+    padding-bottom: 1rem;
   }
 }
 .intros .video-box a span i {
@@ -12017,6 +12029,11 @@ nav li a {
 }
 .services__pic {
   max-width: 100%;
+}
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .services__pic {
+    padding-top: 4rem;
+  }
 }
 
 .testimonials {

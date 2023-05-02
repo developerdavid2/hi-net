@@ -3,31 +3,32 @@
 
 .portfolio {
     padding: 4rem 0;
+
     .nav-portfolio {
         align-content: center;
-    
+
     }
 
 
     @include media-breakpoint-down(lg) {
+        .nav-portfolio {
+            padding: 0 3.5rem;
+            display: flex;
+
+
+        }
+
+        @media (min-width: 632px) and (max-width: 931px) {
             .nav-portfolio {
-                padding: 0 3.5rem;
-                display: flex;
 
-              
-            }
+                padding: 0 13rem;
 
-            @media (min-width: 632px) and (max-width: 931px){
-                .nav-portfolio {
-                    
-                    padding: 0 13rem;
-                    
-                }
             }
+        }
 
     }
 
-  
+
 }
 
 

@@ -13,11 +13,17 @@
 .intros {
 
 
-   
+
 
 
     .video-box {
         position: relative;
+
+
+        @include media-breakpoint-up(lg) {
+            padding-left: 3rem;
+
+        }
 
         .img-fluid {
             @include media-breakpoint-down(sm) {
@@ -25,12 +31,18 @@
                 margin: 3rem 0;
             }
 
-            @include media-breakpoint-up(lg) {
-                scale: calc(1.2);
-            
+            @include media-breakpoint-only(md) {
+                padding-left: 1rem;
+
             }
 
-            
+            @include media-breakpoint-up(lg) {
+                scale: calc(1.2);
+                padding-bottom: 1rem;
+
+            }
+
+
         }
 
 

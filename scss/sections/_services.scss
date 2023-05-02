@@ -34,7 +34,13 @@
         }
     }
 
+
     &__pic {
         max-width: 100%;
+        @include media-breakpoint-only(md) {
+            padding-top: 4rem;
+        }
+
+        
     }
 }

@@ -29,7 +29,7 @@ nav {
     width: 30px;
     height: 20px;
     position: relative;
-    transition: .9s ease-in-out;
+    transition: .6s ease-in-out;
 
    
 }
@@ -49,6 +49,7 @@ nav {
 
  }
 
+
 .toggler-icon {
     display: block;
     position: absolute;
@@ -59,7 +60,7 @@ nav {
     opacity: 1;
     left: 0;
     transform: rotate(0deg);
-    transition: .5s ease-in-out;
+    transition: .3s ease-in-out;
 
     
 }
