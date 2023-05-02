@@ -27,7 +27,7 @@
 
         .img-fluid {
             @include media-breakpoint-down(sm) {
-                scale: calc(1.8);
+                scale: calc(1.2);
                 margin: 3rem 0;
             }
 
