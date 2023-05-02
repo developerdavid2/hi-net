@@ -9,6 +9,19 @@
         display: inline-block;
         font-weight: 700;
         font-family: 'Poppins', sans-serif;
+
+
+        @include media-breakpoint-down(sm) {
+            height: 120px;
+            display: block;
+        }
+
+        @include media-breakpoint-up(lg) {
+            height: 120px;
+            display:block;
+            margin-bottom: 3rem;
+        }
+    
     }
 
     &--description {

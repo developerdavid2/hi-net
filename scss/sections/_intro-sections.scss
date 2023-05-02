@@ -1,39 +1,56 @@
-@use'../custom' as *;
-@use'../components/mixins' as *;
+@use'../custom'as *;
+@use'../components/mixins'as *;
 
 .intro-section {
     @include gradient;
     padding: 10rem 0 0 0;
     width: 100%;
     height: 100%;
-} 
+}
 
 
 
 .intros {
 
-    margin-bottom: 3rem;
+
+   
+
 
     .video-box {
         position: relative;
+
+        .img-fluid {
+            @include media-breakpoint-down(sm) {
+                scale: calc(1.8);
+                margin: 3rem 0;
+            }
+
+            @include media-breakpoint-up(lg) {
+                scale: calc(1.2);
+            
+            }
+
+            
+        }
+
 
         a {
             //@include absoluteCenter;
 
             span {
 
-                i{
+                i {
                     font-size: 6rem;
                     color: #0c3e85;
                 }
-               
+
             }
 
             &:hover {
                 i {
                     color: $primary;
                 }
-                
+
             }
         }
     }
@@ -52,7 +69,49 @@
     &--border-1 {
         animation-delay: 1s;
     }
+
     &--border-2 {
         animation-delay: 1.5s;
+    }
+}
+
+//TYPEWRITER EFFECT 
+
+
+.container p span.typed-text {
+    color: alpha($color: #a58ae4);
+}
+
+.container p span.cursor {
+    display: inline-block;
+    background-color: #ccc;
+    margin-left: 0.1rem;
+    width: 3px;
+    animation: blink 1s infinite;
+}
+
+.container p span.cursor.typing {
+    animation: none;
+}
+
+@keyframes blink {
+    0% {
+        background-color: #ccc;
+    }
+
+    49% {
+        background-color: #ccc;
+    }
+
+    50% {
+        background-color: transparent;
+    }
+
+    99% {
+        background-color: transparent;
+    }
+
+    100% {
+        background-color: #ccc;
     }
 }

@@ -31,9 +31,11 @@
       <a class="navbar-brand" href="#">
         <img src="images/logo.png" alt="" srcset="" style="width: 150px;" />
       </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+      <button class="navbar-toggler collapsed d-flex d-lg-none flex-column justify-content-around" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
         aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-        <i class="fa-solid fa-bars"></i>
+       <span class="toggler-icon top-bar"></span>
+       <span class="toggler-icon middle-bar"></span>
+       <span class="toggler-icon bottom-bar"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
         <ul class="navbar-nav justify-content-center mx-auto">
@@ -78,11 +80,15 @@
         <!-- START THE CONTENT FOR THE INTRO -->
         <div class="col-md-5 intros mb-3">
           <h1 class="display-2">
-            <span class="display-2--intro col-lg-10">Hey!, I'm Hi-Net</span>
-            <span class="display-2--description lh-base">This is design agency with the objective of providing
+            <p class="display-2--intro col-lg-10 d-block">Hey!, I'm <span class="typed-text"></span>
+              <span class="cursor">&nbsp;</span></span>
+            </p>
+            <span class="display-2--description lh-base d-block">This is design agency with the objective of providing
               multi-purpose responsive websites with Bootstrap 5 and
               Sass</span>
-          </h1>
+            
+            </h1>
+         
 
           <button type="button" class="btn btn-lg btn-outline-light rounded-pill fw-medium mb-3 contact-btn">
             Get in Touch
@@ -94,9 +100,9 @@
 
         <!-- START THE CONTENT FOR THE VIDEO -->
 
-        <div class="col-md-7 intros text-center mt-3">
+        <div class="col-md-7 intros text-end mt-3">
           <div class="video-box">
-            <img src="images/arts/programmer.png" alt="video-illustration" class="img-fluid" style="scale: calc(1.5)" />
+            <img src="images/arts/programmer.png" alt="video-illustration" class="img-fluid" style="padding: 0 4rem;" />
             <a href="http://" class="glightbox position-absolute top-50 start-50 translate-middle">
               <span>
                 <i class="fas fa-play-circle"> </i>
@@ -603,25 +609,25 @@
               role="tablist">
               <!-- Tab item -->
               <li class="nav-item">
-                <button class="btn btn-outline-primary mx-2 mb-2 mb-md-0 fw-bold active" id="all-tab"
+                <button class="btn btn-outline-primary rounded-pill mx-2 mb-2 mb-md-0 fw-bold active" id="all-tab"
                   data-bs-toggle="tab" data-bs-target="#all" type="button" role="tab" aria-controls="all"
                   aria-selected="true">All</button>
               </li>
               <!-- Tab item -->
               <li class="nav-item">
-                <button class="btn btn-outline-primary mx-2 mb-2 mb-md-0" id="development-tab" data-bs-toggle="tab"
+                <button class="btn btn-outline-primary rounded-pill mx-2 mb-2 mb-md-0" id="development-tab" data-bs-toggle="tab"
                   data-bs-target="#development" type="button" role="tab" aria-controls="development"
                   aria-selected="false">Development</button>
               </li>
               <!-- Tab item -->
               <li class="nav-item">
-                <button class="btn btn-outline-primary mx-2  mb-2 mb-md-0" id="graphic-tab" data-bs-toggle="tab"
+                <button class="btn btn-outline-primary rounded-pill mx-2  mb-2 mb-md-0" id="graphic-tab" data-bs-toggle="tab"
                   data-bs-target="#graphic" type="button" role="tab" aria-controls="graphic"
                   aria-selected="false">Graphic Design</button>
               </li>
               <!-- Tab item -->
               <li class="nav-item">
-                <button class="btn btn-outline-primary mx-2 mb-2 mb-md-0" id="app-tab" data-bs-toggle="tab"
+                <button class="btn btn-outline-primary rounded-pill mx-2 mb-2 mb-md-0" id="app-tab" data-bs-toggle="tab"
                   data-bs-target="#app" type="button" role="tab" aria-controls="app" aria-selected="false">App</button>
               </li>
             </ul>
@@ -1168,11 +1174,12 @@
   </footer>
 
   <!-- BACK TO TOP BUTTON -->
-<a href="#" class="shadow btn btn-secondary rounded-circle back-to-top">
+<a href="#" class="shadow btn btn-secondary rounded-3 back-to-top">
   <i class="fas fa-chevron-up"></i>
 </a>
 
   <script src="/assets/vendors/js/glightbox.min.js"></script>
+  <script src="/index.js"></script>
 
   <script type="text/javascript">
     const lightbox = GLightbox({
